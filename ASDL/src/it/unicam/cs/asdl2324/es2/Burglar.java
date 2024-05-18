@@ -20,7 +20,6 @@ public class Burglar {
      * @throw NullPointerException se la cassaforte passata è nulla
      */
     public Burglar(CombinationLock aCombinationLock) {
-        // TODO implementare
         //lancia un eccezione se l'oggetto passato è nullo
         if(aCombinationLock == null)
             throw new NullPointerException("L'oggetto inserito è nullo");
@@ -36,7 +35,6 @@ public class Burglar {
      * @return la combinazione della cassaforte forzata.
      */
     public String findCombination() {
-        // TODO implementare
         //creo le variabili che popolerò con i caratteri
         // da passare al metodo setPosition()
         char firstCharacter;
@@ -89,7 +87,6 @@ public class Burglar {
      *         forzata.
      */
     public long getAttempts() {
-        // TODO implementare
         //controlla se la cassaforte sia stata sbloccata correttamente
         if(unlocked)
             return this.attempts; //ritorna il numero di tentavi necessari per scassinare la cassaforte

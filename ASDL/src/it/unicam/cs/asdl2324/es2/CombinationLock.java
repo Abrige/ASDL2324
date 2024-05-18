@@ -9,7 +9,6 @@ package it.unicam.cs.asdl2324.es2;
  */
 public class CombinationLock {
 
-    // TODO inserire le variabili istanza che servono
     //stringa che determina la combinazione della cassaforte
     private String theCombination;
     //array di caratteri per immagazzinare la combinazione inserita
@@ -29,7 +28,6 @@ public class CombinationLock {
      * @throw NullPointerException se la combinazione fornita è nulla
      */
     public CombinationLock(String aCombination) {
-        // TODO implementare
         //verifica la lunghezza della stringa
         if(aCombination.length() != 3)
             throw new IllegalArgumentException("La stringa deve essere di 3 caratteri");
@@ -57,7 +55,6 @@ public class CombinationLock {
      *                                      inglese
      */
     public void setPosition(char aPosition) {
-        // TODO implementare
         //controlla che il carattere inserito sia un carattere valido
         if (aPosition < 'A' || aPosition > 'Z')
             throw new IllegalArgumentException("Carattere non consentito");
@@ -78,7 +75,6 @@ public class CombinationLock {
      * prossimi tentativi di apertura.
      */
     public void open() {
-        // TODO implementare
         //controlla se la cassaforte è aperta o chiusa
         if(!locked){
             //scorre lungo tutta la stringa della combinazione della cassaforte
@@ -100,7 +96,6 @@ public class CombinationLock {
      * @return true se la cassaforte è attualmente aperta, false altrimenti
      */
     public boolean isOpen() {
-        // TODO implementare
         return open; //ritorna lo stato dell'apertura della cassaforte
     }
 
@@ -112,7 +107,6 @@ public class CombinationLock {
      * sono proprio la combinazione attuale.
      */
     public void lock() {
-        // TODO implementare
         open = false; //imposta lo stato della cassaforte su chiusa
 
         //imposta lo stato della cassaforte su bloccata
@@ -136,7 +130,6 @@ public class CombinationLock {
      * @throw NullPointerException se la combinazione fornita è nulla
      */
     public void lockAndChangeCombination(String aCombination) {
-        // TODO implementare
         //verifica che la cassaforte sia aperta
         if(open){
             //controlla la dimensione della combinazione

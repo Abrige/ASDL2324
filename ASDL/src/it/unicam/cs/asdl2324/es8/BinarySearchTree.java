@@ -547,7 +547,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
          * @param l una lista (può essere anche vuota) su cui inserire le
          * etichette in ordine
          */
-        protected void addLabelsInOrder(List<E> l) { // TODO implementare ricorsivamente
+        protected void addLabelsInOrder(List<E> l) {
             //caso base
             if(this.left==null&&this.right==null)
                 return;
@@ -570,7 +570,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
          * @return la lista ordinata delle etichette dei nodi di questo
          * (sotto-)albero secondo l'ordinamento naturale della classe {@code E}
          */
-        protected List<E> inOrderVisit() { // TODO implementare ricorsivamente
+        protected List<E> inOrderVisit() {
             List<E> leftList = new ArrayList<>();
             List<E> rightList = new ArrayList<>();
             List<E> totalList = new ArrayList<>();
@@ -666,7 +666,6 @@ public class BinarySearchTree<E extends Comparable<E>> {
          * Cfr. slides di teoria.
          */
         protected void deleteSelfLabel() {
-            // TODO implementare
         }
     }
 }

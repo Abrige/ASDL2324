@@ -46,7 +46,6 @@ class EquazioneSecondoGradoModificabileConRisolutoreTest {
 
     @Test
     final void testSetA() {
-        // TODO implementare
         double x = 1.0;
         //creo un nuovo oggetto generico da testare
         EquazioneSecondoGradoModificabileConRisolutore e2 =
@@ -66,7 +65,6 @@ class EquazioneSecondoGradoModificabileConRisolutoreTest {
 
     @Test
     final void testGetB() {
-        // TODO implementare
         double x = 10;
         //creo un nuovo oggetto generico da testare
         EquazioneSecondoGradoModificabileConRisolutore e4 =
@@ -77,7 +75,6 @@ class EquazioneSecondoGradoModificabileConRisolutoreTest {
 
     @Test
     final void testSetB() {
-        // TODO implementare
         double x = 1.0;
         //creo un nuovo oggetto generico da testare
         EquazioneSecondoGradoModificabileConRisolutore e5 =
@@ -94,7 +91,6 @@ class EquazioneSecondoGradoModificabileConRisolutoreTest {
 
     @Test
     final void testGetC() {
-        // TODO implementare
         double x = 10;
         //creo un nuovo oggetto generico da testare
         EquazioneSecondoGradoModificabileConRisolutore e6 =
@@ -105,7 +101,6 @@ class EquazioneSecondoGradoModificabileConRisolutoreTest {
 
     @Test
     final void testSetC() {
-        // TODO implementare
         double x = 1.0;
         //creo un nuovo oggetto generico da testare
         EquazioneSecondoGradoModificabileConRisolutore e7 =
@@ -122,7 +117,6 @@ class EquazioneSecondoGradoModificabileConRisolutoreTest {
 
     @Test
     final void testIsSolved() {
-        // TODO implementare
         //creo un nuovo oggetto generico da testare
         EquazioneSecondoGradoModificabileConRisolutore e8 =
                 new EquazioneSecondoGradoModificabileConRisolutore(2,5,4);
@@ -154,7 +148,6 @@ class EquazioneSecondoGradoModificabileConRisolutoreTest {
 
     @Test
     final void testGetSolution() {
-        // TODO implementare
 
         // equazione senza soluzioni reali
         EquazioneSecondoGradoModificabileConRisolutore eq1 =

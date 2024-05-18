@@ -33,7 +33,6 @@ public class Prenotazione implements Comparable<Prenotazione> {
      */
     public Prenotazione(String aula, TimeSlot timeSlot, String docente,
             String motivo) {
-        // TODO implementare
         //controlla che gli oggetti passati no siano nulli
         if(aula == null || timeSlot == null || docente == null || motivo == null)
             throw new NullPointerException("Non è possibile passare valori nulli");
@@ -95,7 +94,6 @@ public class Prenotazione implements Comparable<Prenotazione> {
      */
     @Override
     public boolean equals(Object obj) {
-        // TODO implementare
         if (this == obj)
             return true;
         if (obj == null)
@@ -119,7 +117,6 @@ public class Prenotazione implements Comparable<Prenotazione> {
      */
     @Override
     public int hashCode() {
-        // TODO implementare
         //sommo gli hashcode del timeslot e dell'aula
         return this.timeSlot.hashCode() + this.aula.hashCode();
     }
@@ -131,7 +128,6 @@ public class Prenotazione implements Comparable<Prenotazione> {
      */
     @Override
     public int compareTo(Prenotazione o) {
-        // TODO implementare
         //controllo se i timeslot sono uguali
         if(this.timeSlot.equals(o.getTimeSlot()))
             //ritorno il compareTo tra le aule

@@ -32,7 +32,6 @@ public class GestoreAule {
      *                                  se l'aula passata è nulla
      */
     public boolean addAula(Aula a) {
-        // TODO implementare
         //controllo che l'oggetto passato non sia nullo
         if(a == null)
             throw new NullPointerException("Non possono essere passati valori nulli");
@@ -67,7 +66,6 @@ public class GestoreAule {
      *                                  passate è nulla
      */
     public Set<Aula> cercaAuleLibere (Set<Facility> requestedFacilities, TimeSlot ts) {
-        // TODO implementare
         //controllo che l'oggetto passato non sia nullo
         if(requestedFacilities == null || ts == null)
             throw new NullPointerException("Non possono essere passati valori nulli");

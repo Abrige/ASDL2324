@@ -3,7 +3,6 @@
  */
 package it.unicam.cs.asdl2324.es3;
 
-// TODO completare gli import se necessario
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -44,7 +43,6 @@ public class TimeSlot implements Comparable<TimeSlot> {
      *                                      stop
      */
     public TimeSlot(GregorianCalendar start, GregorianCalendar stop) {
-        // TODO implementare
         if(start == null || stop == null)
             throw new NullPointerException("Il valore non può essere nullo");
         if(start.compareTo(stop) >= 0)
@@ -75,7 +73,6 @@ public class TimeSlot implements Comparable<TimeSlot> {
      */
     @Override
     public boolean equals(Object obj) {
-        // TODO implementare
         if (this == obj)
             return true;
         if (obj == null)
@@ -96,7 +93,6 @@ public class TimeSlot implements Comparable<TimeSlot> {
      */
     @Override
     public int hashCode() {
-        // TODO implementare
         //uso la funzione hashcode presente nella ClasseGregorian calendar
         //unisco l'hashcode dello start e l'hashcode dello stop
         return this.start.hashCode() + this.stop.hashCode();
@@ -109,7 +105,6 @@ public class TimeSlot implements Comparable<TimeSlot> {
      */
     @Override
     public int compareTo(TimeSlot o) {
-        // TODO implementare
         if (o == null)
             throw new NullPointerException("Tentativo di confrontare con null");
         //uso il compare già definito nella classe GregorianCalendar
@@ -143,7 +138,6 @@ public class TimeSlot implements Comparable<TimeSlot> {
      *                                      superano Integer.MAX_VALUE
      */
     public int getMinutesOfOverlappingWith(TimeSlot o) {
-        // TODO implementare
         if(o == null)
             throw new NullPointerException("Non puoi passare valori nulli");
         //caso in cui non si sovrappongono, se coincidono non sono sovrapposti
@@ -185,7 +179,6 @@ public class TimeSlot implements Comparable<TimeSlot> {
      *                                  se il time slot passato è nullo
      */
     public boolean overlapsWith(TimeSlot o) {
-        // TODO implementare
         if(o == null)
             throw new NullPointerException("L'oggetto passato non può essere nullo");
         //verifica se i minuti di sovrapposizione sono maggiori della tolleranza
@@ -203,7 +196,6 @@ public class TimeSlot implements Comparable<TimeSlot> {
      */
     @Override
     public String toString() {
-        // TODO implementare
         //stampa la data in formato [DD/MM/YYYY hh.mm - DD/MM/YYYY hh.mm]
         return "[" +
                 //aggiungo 1 al mese perchè i mesi vanno da 0 a 11 e non da 1 a 12

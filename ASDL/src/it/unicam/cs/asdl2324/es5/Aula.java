@@ -2,7 +2,6 @@ package it.unicam.cs.asdl2324.es5;
 
 import java.util.*;
 
-// TODO importare eventuali classi o interfacce che servono
 
 /**
  * Un oggetto della classe aula rappresenta una certa aula con le sue facilities
@@ -39,7 +38,6 @@ public class Aula implements Comparable<Aula> {
      *                                  richieste è nulla
      */
     public Aula(String nome, String location) {
-        // TODO implementare
         //controllo che i valori passati non siano nulli
         if(nome == null || location == null)
             throw new NullPointerException("Non possono essere passati valori nulli");
@@ -65,7 +63,6 @@ public class Aula implements Comparable<Aula> {
      *                                  richieste è nulla
      */
     public Aula(String nome, String location, Set<Facility> facilities) {
-        // TODO implementare
         //controllo che i valori passati non siano nulli
         if(nome == null || location == null || facilities == null)
             throw new NullPointerException("Non possono essere passati valori nulli");
@@ -80,7 +77,6 @@ public class Aula implements Comparable<Aula> {
      */
     @Override
     public int hashCode() {
-        // TODO implementare
         //ritorno l'hash code delle stringhe già implementato
         //nella classe String
         return nome.hashCode();
@@ -89,7 +85,6 @@ public class Aula implements Comparable<Aula> {
     /* Due aule sono uguali se e solo se hanno lo stesso nome */
     @Override
     public boolean equals(Object obj) {
-        // TODO implementare
         if (this == obj)
             return true;
         if (obj == null)
@@ -106,7 +101,6 @@ public class Aula implements Comparable<Aula> {
     /* L'ordinamento naturale si basa sul nome dell'aula */
     @Override
     public int compareTo(Aula o) {
-        // TODO implementare
         //ritorno il compare tra stringhe già implementato
         //nella classe String
         return this.nome.compareTo(o.nome);
@@ -151,7 +145,6 @@ public class Aula implements Comparable<Aula> {
      *                                  se la facility passata è nulla
      */
     public boolean addFacility(Facility f) {
-        // TODO implementare
         //controllo che l'oggetto passato non sia nullo
         if(f == null)
             throw new NullPointerException("Non possono essere passati valori nulli");
@@ -172,7 +165,6 @@ public class Aula implements Comparable<Aula> {
      */
     //se sbagliato ha una esecuzione più lunga di 10ms
     public boolean isFree(TimeSlot ts) {
-        // TODO implementare
         /*
          * NOTA: sfruttare l'ordinamento tra le prenotazioni per rispondere in
          * maniera efficiente: poiché le prenotazioni sono in ordine crescente
@@ -214,7 +206,6 @@ public class Aula implements Comparable<Aula> {
      *                                  se il set di facility richieste è nullo
      */
     public boolean satisfiesFacilities(Set<Facility> requestedFacilities) {
-        // TODO implementare
         //controllo che l'oggetto passato non sia nullo
         if(requestedFacilities == null)
             throw new NullPointerException("Non possono essere passati valori nulli");
@@ -240,7 +231,6 @@ public class Aula implements Comparable<Aula> {
      *                                      richieste è nulla.
      */
     public void addPrenotazione(TimeSlot ts, String docente, String motivo) {
-        // TODO implementare
         //controllo che l'oggetto passato non sia nullo
         if(ts == null || docente == null || motivo == null)
             throw new NullPointerException("Non possono essere passati valori nulli");
@@ -262,7 +252,6 @@ public class Aula implements Comparable<Aula> {
      *                                  se la prenotazione passata è null
      */
     public boolean removePrenotazione(Prenotazione p) {
-        // TODO implementare
         //controllo che l'oggetto passato non sia nullo
         if(p == null)
             throw new NullPointerException("Non possono essere passati valori nulli");
@@ -285,7 +274,6 @@ public class Aula implements Comparable<Aula> {
      */
     //se sbagliato ha una esecuzione più lunga di 10ms
     public boolean removePrenotazioniBefore(GregorianCalendar timePoint) {
-        // TODO implementare
         /*
          * NOTA: sfruttare l'ordinamento tra le prenotazioni per rispondere in
          * maniera efficiente: poiché le prenotazioni sono in ordine crescente

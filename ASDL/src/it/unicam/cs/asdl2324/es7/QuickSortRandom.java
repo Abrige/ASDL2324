@@ -6,7 +6,6 @@ package it.unicam.cs.asdl2324.es7;
 import java.util.List;
 import java.util.Random;
 
-//TODO completare import
 
 /**
  * Implementazione del QuickSort con scelta della posizione del pivot scelta
